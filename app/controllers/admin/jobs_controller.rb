@@ -45,7 +45,7 @@ class Admin::JobsController < ApplicationController
   private
 
   def jobs_params
-    params.require(:job).perimit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email)
+    params.require(:job).perimit(:title, :description, :wage_upper_bound, :wage_lower_bound, :contact_email, :is_hidden)
   end
 
 
