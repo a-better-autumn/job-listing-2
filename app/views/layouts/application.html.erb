@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Supper Offer</title>
+    <title>普瑞提美容师招聘网</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -11,15 +11,17 @@
   </head>
 
   <body>
-    <div class="container-fluid">
-        <div class="row">
-          <%= render "common/navbar" %>
-        </div>
-        <div class="row">
-          <%= render "common/flashes"%>
-        </div>
-          <%= yield %>
-        </div>
+    <div class="content">
+      <div class="container-fluid">
+          <div class="row">
+            <%= render "common/navbar" %>
+          </div>
+          <div class="row">
+            <%= render "common/flashes"%>
+          </div>
+            <%= yield %>
+      </div>
+    </div>
 
         <%= render "common/footer" %>
   </body>

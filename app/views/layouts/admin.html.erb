@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title> Supper Offer </title>
+        <title> 普瑞提美容师招聘网 </title>
         <%= csrf_meta_tags %>
 
         <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,25 +9,25 @@
     </head>
 
     <body>
-
+      <div class="content">
         <div class="container-fluid">
           <div class="row">
             <%= render "common/navbar" %>
           </div>
             <%= render "common/flashes" %>
             <div class="row">
-              <div class="col-md-2">
+              <!-- <div class="col-md-2">
                 <ul class="nav nav-pills nav-stacked" style="max-width: 300px; padding-top:20px;">
                   <li class="active"><%= link_to("Jobs", admin_jobs_path ) %> </li>
                 </ul>
-              </div>
+              </div> -->
 
-              <div class="col-md-10">
+              <div class="col-md-8 col-centered ">
                 <%= yield %>
               </div>
            </div>
         </div>
-
+      </div>
         <%= render "common/footer" %>
 
     </body>
